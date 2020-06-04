@@ -11,7 +11,7 @@ get '/' do
 end
 
 get '/students' do
-    @all_students = Student.find_all_students()
+    @all_students = Student.find_all_students_information()
     erb(:index)
 end
 

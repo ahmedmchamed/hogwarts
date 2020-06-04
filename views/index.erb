@@ -2,9 +2,9 @@
 <% @all_students.each do |student| %>
     <div class="student-list-item">
         <div class="student-crest-and-name">
-            <img src=<%= student.house + ".png" %> class="crest" />
-            <p><b><%= student.full_name() %></b> of the <i><%= student.house %></i> House</p>
+            <img src=<%= student["url"] %> class="crest" />
+            <p><b><%= student["student_name"] %></b> of the <i><%= student["house_name"] %></i> House</p>
         </div>
-        <ul><li>Age: <%= student.age %></li></ul>
+        <ul><li>Age: <%= student["age"] %></li></ul>
     </div>
 <% end %>
