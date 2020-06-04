@@ -1,6 +1,10 @@
+<h1>Hogwarts Student List</h1>
 <% @all_students.each do |student| %>
-    <div id="student-list-item">
-        <p><b><%= student.full_name() %></b> of the <i><%= student.house %></i> House</p>
+    <div class="student-list-item">
+        <div class="student-crest-and-name">
+            <img src=<%= student.house + ".png" %> class="crest" />
+            <p><b><%= student.full_name() %></b> of the <i><%= student.house %></i> House</p>
+        </div>
         <ul><li>Age: <%= student.age %></li></ul>
     </div>
 <% end %>

@@ -39,7 +39,7 @@ class Student
     end
 
     def self.map_student_data(student_hash_data)
-        result = student_hash_data.map { |student| Student.new(student) }
+        return student_hash_data.map { |student| Student.new(student) }
     end
 
     def full_name
