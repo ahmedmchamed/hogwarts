@@ -42,4 +42,7 @@ class Student
         result = student_hash_data.map { |student| Student.new(student) }
     end
 
+    def full_name
+        return "#{@first_name} #{@last_name}"
+    end
 end
