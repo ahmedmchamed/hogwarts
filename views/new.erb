@@ -9,11 +9,10 @@
     </div>
     <div class=new-student-form>
         <label for="house-enter">Enter your House</label>
-        <select id="house-enter" name="house">
-            <option value="Gryffindor">Gryffindor</option>
-            <option value="Slytherin">Slytherin</option>
-            <option value="Ravenclaw">Ravenclaw</option>
-            <option value="Hufflepuff">Hufflepuff</option>
+        <select id="house-enter" name="house_id">
+            <% @all_houses.each do |house| %>
+               <option value="<%=house.id()%>"><%=house.name%></option>
+            <% end %>
         </select>
     </div>
     <div class=new-student-form>

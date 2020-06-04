@@ -2,6 +2,7 @@ require('sinatra')
 require('sinatra/contrib/all')
 
 require_relative('./models/student')
+require_relative('./models/house')
 also_reload('./models/*')
 
 set :environment, :production
@@ -16,6 +17,7 @@ get '/students' do
 end
 
 get '/students/new' do
+    @all_houses = House.find_all_houses
     erb(:new)
 end
 
