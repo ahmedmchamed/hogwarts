@@ -26,6 +26,11 @@ slytherin = House.new({
     'url' => 'Slytherin.png'
 })
 
+House.new({
+    'name' => 'Staff',
+    'url' => 'https://placebear.com/g/50/50'
+})
+
 ################
 ####STUDENTS####
 ################
