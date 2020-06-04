@@ -1,4 +1,5 @@
 require_relative('./models/student.rb')
+require('pry')
 
 harry = Student.new({
     "first_name" => "Harry",
@@ -49,3 +50,5 @@ pomonia = Student.new({
     "age" => 65
 })
 
+binding.pry
+nil
